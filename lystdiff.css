@@ -17,25 +17,31 @@
     font-size: 20pt;
 }
 
-#indesc{
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    color: gainsboro;
-    font-size: 15pt;
-}
-
 #inputarea{
     font-family: 'Lato', sans-serif
 }
 
-@keyframes repeated{
-    0%      { color: gainsboro }
+@keyframes repeatedWord{
+    0%      { color: black }
     10%     { color: red }
-    100%    { color: gainsboro }
+    100%    { color: black }
 }
 
-#wrap{
+.repeated{
+    animation-duration: 2s;
+    animation-name: repeatedWord;
+}
+
+#buttonwrap{
     text-align: center;
+}
+
+#areawrap{
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #submit {
@@ -92,6 +98,8 @@ footer{
     outline: none;
     font-size: 16px;
     font-weight: 300;
+    text-align: left;
+    color:gainsboro;
   }
   
   .taggle_list li {
