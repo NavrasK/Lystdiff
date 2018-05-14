@@ -6,21 +6,22 @@
         <meta name="author" content="Navras Kamal">
         <meta name="description" content="A decklist comparison tool for Duelyst. Currently supports Bagoum decklists.">
         <meta name="keywords" content="Duelyst,Deck,List,Comparison,Tool,Javascript,Broken,Mirror,Media,Navras,Kamal,Game,Card">
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="lystdiff.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
-  
-    <body style="background-color: #172127">
         <script src="lystdiff.js"></script>
-        <h1><i>LystDiff</i></h1>
+    </head>
+
+    <body onload="init()">
+        <div id="title"><i>LystDiff</i></div>
         <br>
-        <h2>INPUT</h2>
-        <p id="inputarea"></p>
-        <button id="submit">SUBMIT</button>
+        <div id="ip">INPUT</div>
+        <div id="inputarea"></div>
         <br>
-        <h2>OUTPUT</h2>
-        <p id="outputarea"></p>
+        <div id="buttonwrap"><button id="submit">SUBMIT</button></div>
+        <br>
+        <div id="op">OUTPUT</div>
+        <div id="outputarea"></div>
     </body>
 
     <footer>

@@ -15,10 +15,9 @@ var HttpClient = function() {
 
 var lists = [];
 
-window.onload = init;
-
 function init(){
-    // initialize the window
+    document.getElementById('op').style.display = "none";
+    document.getElementById('outputarea').style.display = "none";
 }
 
 function inputLists(){
