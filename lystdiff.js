@@ -18,7 +18,6 @@ var tagg;
 var lists = [];
 
 function init(){
-    document.getElementById('out').style.display = "none";
     document.getElementById('outputarea').style.display = "none";
     tagg = new Taggle('inputarea', {duplicateTagClass: 'repeated'})
 }
