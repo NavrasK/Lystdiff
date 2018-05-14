@@ -10,15 +10,28 @@
     font-weight: bold;
 }
 
-#ip{
+#in{
     font-family: 'Lato', sans-serif;
     text-align: center;
     color: gainsboro;
     font-size: 20pt;
 }
 
+#indesc{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: gainsboro;
+    font-size: 15pt;
+}
+
 #inputarea{
     font-family: 'Lato', sans-serif
+}
+
+@keyframes repeated{
+    0%      { color: gainsboro }
+    10%     { color: red }
+    100%    { color: gainsboro }
 }
 
 #buttonwrap{
@@ -40,7 +53,7 @@
     color: #171717;
 }
 
-#op{
+#out{
     font-family: 'Lato', sans-serif;
     text-align: center;
     color: gainsboro;

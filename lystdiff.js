@@ -13,11 +13,14 @@ var HttpClient = function() {
     }
 }
 
+var tagg;
+
 var lists = [];
 
 function init(){
-    document.getElementById('op').style.display = "none";
+    document.getElementById('out').style.display = "none";
     document.getElementById('outputarea').style.display = "none";
+    tagg = new Taggle('inputarea', {duplicateTagClass: 'repeated'})
 }
 
 function inputLists(){
