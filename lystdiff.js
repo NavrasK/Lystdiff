@@ -19,11 +19,16 @@ var lists = [];
 
 function init(){
     document.getElementById('outputarea').style.display = "none";
-    tagg = new Taggle('inputarea', {duplicateTagClass: 'repeated'})
+    tagg = new Taggle('inputarea', {duplicateTagClass: 'repeated', 
+    preserveCase:true, placeholder: "Enter the short Bagoum deck URLs (ie. bagoum.com/db/XXX)"})
 }
 
-function inputLists(){
-    console.log("TESTING")
+function readLists(){
+    // read in lists from taggle, filter out invalid values
+}
+
+function handleLists(){
+    // convert the lists to the proper url format, then feed into getDecklist(), then call processLists()
 }
 
 function getDeckList(url){
@@ -31,4 +36,8 @@ function getDeckList(url){
     client.get(url, function(response) {
         lists.push(JSON.parse(response))
     });
+}
+
+function processLists(){
+
 }
