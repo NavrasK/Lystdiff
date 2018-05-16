@@ -1,19 +1,3 @@
-// Uses code from Stackoverflow, Github and https://sean.is/poppin/tags/
-
-var HttpClient = function() {
-    // Credit to tggagne on stackoverflow for this code segment https://stackoverflow.com/a/22076667
-    this.get = function(src, aCallback) {
-        var anHttpRequest = new XMLHttpRequest();
-        anHttpRequest.onreadystatechange = function() { 
-            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-                aCallback(anHttpRequest.responseText);
-        }
-
-        anHttpRequest.open("GET", src, true);            
-        anHttpRequest.send(null);
-    }
-}
-
 var tagg;
 var lists = [];
 
@@ -64,18 +48,7 @@ function submit(){
 }
 
 function checkURL(url){
-    var client = new HttpClient();
-    url = "https://cors-anywhere.herokuapp.com/"+url;
-    client.get(url, function(response) {
-        console.log(response)
-        if (response == "false"){
-            console.log("INVALID");
-            return false;
-        }else{
-            console.log("VALID");
-            return true;
-        }
-    });
+    
 }
 
 function handleLists(lists){
@@ -85,10 +58,7 @@ function handleLists(lists){
 }
 
 function getDeckList(url){
-    var client = new HttpClient();
-    client.get(url, function(response) {
-        lists.push(JSON.parse(response))
-    });
+    
 }
 
 function processLists(){
